@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Fragment } from 'react';
+import ArticleList from '../components/ArticleList';
 import styles from '../styles/Home.module.css';
 
 
@@ -21,7 +22,7 @@ export default function Home({articles}) {
     </Head>
    
     <h1> Hello Welcome to next / Page</h1>
-    {articles.map((article) =><h3 key={article.id}>{article.title}</h3> )}
+    <ArticleList articles={articles} />
   </div>
   )
 }
