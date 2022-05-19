@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import articleStyles from '../styles/Article.module.css' 
 
-
+/* eslint-disable */
 const ArticleItem = ({ article }) => {
     return (
       <Link href={`/article/${article.id}`}>
