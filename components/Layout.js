@@ -1,3 +1,4 @@
+import Meta from './meta'
 import styles from '../styles/Layout.module.css'
 import Nav from './Nav' 
 import Header from './Header'
@@ -5,6 +6,7 @@ import Header from './Header'
 const Layout = ({children}) => {
   return (
     <>
+    <Meta />
     <Nav />
     <div className={styles.container}>
         <main className={styles.main}>
