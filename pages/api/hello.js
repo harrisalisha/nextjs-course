@@ -3,3 +3,5 @@
 export default function handler(req, res) {
   res.status(200).json({ name: 'John Doe' })
 }
+
+//you can put data from any where like sql data base or any thing

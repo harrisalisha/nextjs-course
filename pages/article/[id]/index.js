@@ -1,6 +1,7 @@
 import {useRouter } from 'next/router'
 import Link from 'next/link'
 
+//article
 
  export const getStaticProps = async (context) => {
    const res = await fetch(
@@ -27,6 +28,7 @@ import Link from 'next/link'
      fallback: false,
    }
  }
+ //fallback false , if no article.id will return 404
 
 export const article = ({article }) => {
     return <>
